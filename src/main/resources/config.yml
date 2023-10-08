@@ -1,0 +1,13 @@
+enabled: true
+debug: false
+server-name: "server"
+bypass:
+  op: true
+  whitelist: true
+  joined-before: false
+permissions:
+  global: "whitelist.login"
+  server: "whitelist.join.%name%"
+kick-messages:
+  no-global-permission: "You don't have permission to join any server in this network."
+  no-server-permission: "You don't have permission to join this server."
