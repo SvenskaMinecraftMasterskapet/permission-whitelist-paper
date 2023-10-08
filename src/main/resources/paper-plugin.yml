@@ -10,3 +10,7 @@ dependencies:
       load: BEFORE
       required: true
       join-classpath: true
+permissions: 
+  pwp.command.pwp:
+    description: Permission to use /pwp command
+    default: op

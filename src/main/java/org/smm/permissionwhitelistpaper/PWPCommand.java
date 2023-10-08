@@ -16,6 +16,10 @@ public class PWPCommand extends Command {
 
     @Override
     public boolean execute(@NotNull CommandSender commandSender, @NotNull String s, @NotNull String[] args) {
+        if(!commandSender.hasPermission("pwp.commands.pwp")) {
+            commandSender.sendMessage("§cYou dont have enough permissions to execute this command");
+            return true;
+        }
         if(args.length == 0) {
             commandSender.sendMessage("§cUsage: /pwp <subcommand> [args]");
             return true;
